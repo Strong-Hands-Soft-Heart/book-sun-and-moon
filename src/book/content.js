@@ -42,7 +42,7 @@ export const SITE_URL = String(
 export const SITE_CANONICAL = `${SITE_URL}/`;
 export const SITE_IMAGE = `${SITE_URL}/og.png`;
 export const SITE_COVER = `${SITE_URL}/cover.jpg`;
-export const REPO_URL = "https://github.com/antoniwan/book-sun-and-moon";
+export const REPO_URL = "https://github.com/Strong-Hands-Soft-Heart/book-sun-and-moon";
 
 export const SEO = {
   defaultTitle: "Mia, the Sun, and the Moon",
