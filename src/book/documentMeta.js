@@ -31,7 +31,10 @@ export function buildJsonLd(language) {
   const title = SEO.title[language] || SEO.defaultTitle;
   const description = SEO.description[language];
   const authorName = BOOK.author[language];
-  const personId = `${SITE_URL}/#author`;
+  // Antonio's one ID across his sites; antoniwan.online holds the full Person.
+  const personId = "https://antoniwan.online/#person";
+  // The company publishes the book.
+  const publisherId = "https://www.stronghandssoftheart.com/#organization";
   const websiteId = `${SITE_URL}/#website`;
   const bookId = `${SITE_URL}/#book`;
   const webpageId = `${SITE_URL}/#webpage`;
@@ -47,6 +50,12 @@ export function buildJsonLd(language) {
         url: BOOK.portfolioUrl,
       },
       {
+        "@type": "Organization",
+        "@id": publisherId,
+        name: BOOK.publisher.name,
+        url: BOOK.publisher.url,
+      },
+      {
         "@type": "WebSite",
         "@id": websiteId,
         url: SITE_CANONICAL,
@@ -55,7 +64,7 @@ export function buildJsonLd(language) {
         description,
         inLanguage: ["en", "es"],
         author: { "@id": personId },
-        publisher: { "@id": personId },
+        publisher: { "@id": publisherId },
       },
       {
         "@type": "Book",
@@ -75,7 +84,7 @@ export function buildJsonLd(language) {
         keywords: SEO.tags.join(", "),
         author: { "@id": personId },
         creator: { "@id": personId },
-        publisher: { "@id": personId },
+        publisher: { "@id": publisherId },
         copyrightHolder: { "@id": personId },
         copyrightYear: 2026,
         license: "https://creativecommons.org/licenses/by-nc/4.0/",

@@ -31,7 +31,8 @@ export const BOOK = {
     en: "Written, designed, and built with love for my daughter and nephew.",
     es: "Escrito, diseñado y programado con mucho amor para mi hija y mi sobrino.",
   },
-  portfolioUrl: "https://antonio.builds.software",
+  portfolioUrl: "https://antoniwan.online",
+  publisher: { name: "Strong Hands, Soft Heart LLC", url: "https://www.stronghandssoftheart.com" },
 };
 
 /** Production origin, no trailing slash. Override with VITE_SITE_URL at build time. */
