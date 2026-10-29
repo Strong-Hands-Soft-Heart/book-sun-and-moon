@@ -23,6 +23,8 @@ export default function LanguageToggle({
             type="button"
             aria-pressed={active}
             onClick={() => onChange(option.id)}
+            data-umami-event="cta"
+            data-umami-event-label={`language-${option.id}`}
             className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide transition ${
               active
                 ? tone === "dark"

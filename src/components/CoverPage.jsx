@@ -19,6 +19,8 @@ function CoverActions({
         <button
           type="button"
           onClick={onStart}
+          data-umami-event="cta"
+          data-umami-event-label="open-book"
           className="rounded-full bg-ember px-8 py-3 font-story text-sm font-semibold tracking-wide text-paper shadow-page transition hover:bg-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember"
         >
           {language === "es" ? "Abrir el cuento" : "Open the book"}
@@ -27,6 +29,8 @@ function CoverActions({
           <button
             type="button"
             onClick={onContinue}
+            data-umami-event="cta"
+            data-umami-event-label="continue-reading"
             className="rounded-full border border-ink/15 bg-paper/80 px-6 py-3 font-story text-sm font-semibold tracking-wide text-ink backdrop-blur-sm transition hover:bg-paper focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember"
           >
             {language === "es" ? "Seguir leyendo" : "Continue reading"}
