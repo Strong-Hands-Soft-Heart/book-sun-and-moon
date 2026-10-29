@@ -103,6 +103,8 @@ export default function ReaderBar({
               <button
                 type="button"
                 onClick={goFirst}
+                data-umami-event="cta"
+                data-umami-event-label="read-again"
                 className="rounded-full bg-ember px-4 py-2 text-sm font-bold text-paper transition hover:bg-ink"
               >
                 {copy.again}
@@ -128,6 +130,8 @@ export default function ReaderBar({
           <button
             type="button"
             onClick={onToggleSpeech}
+            data-umami-event="cta"
+            data-umami-event-label="read-aloud"
             className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold text-ink/80 transition hover:bg-black/5"
           >
             {speaking ? <VolumeX size={16} /> : <Volume2 size={16} />}

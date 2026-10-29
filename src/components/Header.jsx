@@ -20,6 +20,8 @@ export default function Header({ onHome, isCover }) {
       <button
         type="button"
         onClick={onHome}
+        data-umami-event="cta"
+        data-umami-event-label="home"
         className="group flex items-center gap-2 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ember lg:hidden"
         aria-label={coverLabel}
       >
@@ -33,6 +35,8 @@ export default function Header({ onHome, isCover }) {
       <button
         type="button"
         onClick={onHome}
+        data-umami-event="cta"
+        data-umami-event-label="home"
         className="group hidden w-full text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ember lg:block"
         aria-label={coverLabel}
       >
