@@ -34,6 +34,7 @@ function stats() {
             "data-domains":
               "mia-the-sun-and-the-moon-web-book.stronghandssoftheart.com",
             "data-do-not-track": "true",
+            "data-errors": "true",
           },
           injectTo: "head",
         },
